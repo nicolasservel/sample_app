@@ -36,6 +36,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    annotate (2.4.1.beta1)
     ansi (1.4.3)
     arel (6.0.0.beta1)
     bcrypt (3.1.7)
@@ -245,6 +246,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate (~> 2.4.1.beta)
   bcrypt (= 3.1.7)
   bootstrap-sass (= 3.2.0.0)
   bootstrap-will_paginate (= 0.0.10)
