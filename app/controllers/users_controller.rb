@@ -1,6 +1,4 @@
 class UsersController < ApplicationController
-  def new
-  end
 
   def show
   	@user = User.find(params[:id])
@@ -19,6 +17,15 @@ class UsersController < ApplicationController
   	else
   		render 'new'
   	end
+  end
+
+  def edit
+    @user = User.find(params[:id])
+    if @user.udpate_attributes(user_params)
+
+    else
+      render 'edit'
+    end
   end
 
   private 
